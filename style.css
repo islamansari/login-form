@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(77deg,orange,yellow);
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    padding: 4rem;
+}
+.container{
+    background-color: rgba(255, 255, 255, 1);
+    padding: 4rem;
+    border-radius: 5px;
+    height: 68%;
+    width: 28%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.container h2{
+    text-align: center;
+    padding-bottom: 2rem;
+    margin:0;
+}
+.form-control{
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    /* overflow: hidden; */
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input{
+    display: block;
+    width: 100%;
+    border: 2px solid #f0f0f0;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 10px;
+    font-family: inherit;
+}
+.form-control.success input{
+    border-color: #008000a6;
+}
+.form-control.error input{
+    border-color: red;
+}
+
+.form-control i{
+    position: absolute;
+    top: 43px;
+    right: 0px;
+    visibility: hidden;
+}
+.form-control i#toggle_icon1 {
+    visibility: visible;
+    top: 43px;
+    right: 22px;
+}
+.form-control #toggle_icon2 {
+    visibility: visible;
+    top: 43px;
+    right: 22px;
+}
+.form-control.success i.fa-check-circle{
+    visibility: visible;
+    color:#008000a6;
+}
+.form-control.error i.fa-exclamation-circle{
+    visibility: visible;
+    color:red;
+}
+.form-control.error span{
+    visibility: visible;
+    color: red;
+}
+.form-control .error{
+    position: absolute;
+    bottom: -5px;
+    left: 2px;
+    visibility: hidden;
+}
+.container button{
+    display: block;
+    width: 100%;
+    background-color: orange;
+    border:2px solid orange;
+    border-radius: 4px;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* for mobiles */
+@media screen and (max-width:400px) {
+    body{
+        padding: 2rem 0rem;
+    }
+    .container{
+        width: 50%;
+        width: 74%;
+        padding: 1.5rem;
+    }
+    .form-control input{
+        width: 94%;
+    }
+}

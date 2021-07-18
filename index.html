@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#" class="container" id="form">
+        <h2>Create a New Account</h2>
+        <div class="form-control">
+            <label for="name">Username</label>
+            <input type="text" placeholder="Islam Ansari" id="username">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <span class="error">Name must be between 2 to 10 characters</span>
+        </div>
+        <div class="form-control">
+            <label for="name">Zipcode</label>
+            <input type="text" placeholder="171003" id="zip">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <span class="error">Enter a valid zipcode</span>
+        </div>
+        <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" placeholder="islam@gmail.com" id="email">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <span class="error">Enter a valid Email</span>
+        </div>
+        <div class="form-control">
+            <label for="email">Phone No.</label>
+            <input type="email" placeholder="islam@gmail.com" id="phone">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <span class="error">Enter a valid Phone No.</span>
+        </div>
+        <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" placeholder="password" id="pass">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-eye" id="toggle_icon1"></i>
+            <span class="error">Error message</span>
+        </div>
+        <div class="form-control">
+            <label for="name">Confirm Password</label>
+            <input type="password" placeholder="password" id="cpass">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <!-- <i class="fas fa-eye"></i> -->
+            <i class="fas fa-eye" id="toggle_icon2"></i>
+            <span class="error">Password does'nt match</span>
+        </div>
+        <button type="submit" id="btn">Create Account</button>
+    </form>
+
+<script src="app.js"></script>
+</body>
+</html>
